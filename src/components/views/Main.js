@@ -6,23 +6,21 @@ import ToolBar from '../ToolBar'
 import Content from '../Content'
 import Overlay from './Overlay'
 
-// const users = 'http://localhost:3000/users'
-// const post_data = 'http://localhost:3000/posts'
+const users = 'http://localhost:3000/users'
+const post_data = 'http://localhost:3000/posts'
 
-const users = 'https://views-server.herokuapp.com/users'
-const post_data = 'https://views-server.herokuapp.com/posts'
+// const users = 'https://views-server.herokuapp.com/users'
+// const post_data = 'https://views-server.herokuapp.com/posts'
 
 class Main extends Component {
     constructor(props) {
         super(props)
-    
         this.state = {
             id: props.match.params.id,
             profile:[],
             posts:[],
             overlay_form:[]
         }
-        
         this.handleOvelayFormChange.bind(this)
     }
 

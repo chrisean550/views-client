@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
-// const db = 'http://localhost:3000/users'
-const db = 'https://views-server.herokuapp.com/users'
+const db = 'http://localhost:3000/users'
+// const db = 'https://views-server.herokuapp.com/users'
 class LoginForm extends Component {
     constructor(props) {
         super(props)

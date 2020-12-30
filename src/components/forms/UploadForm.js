@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
-// const db = 'http://localhost:3000/posts'
-const db = 'https://views-server.herokuapp.com/posts'
+const db = 'http://localhost:3000/posts'
+// const db = 'https://views-server.herokuapp.com/posts'
 class UploadForm extends Component {
 
     constructor(props) {
@@ -28,7 +28,7 @@ class UploadForm extends Component {
         e.preventDefault();
         let post = {
             url: this.state.url,
-            description: this.state.description,
+            description: this.state.description
         }
         axios.post(db, post)
         .then(response =>{
